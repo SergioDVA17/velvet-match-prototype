@@ -379,16 +379,25 @@ nav a:hover{
 
     border-radius: 25px;
 
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.72);
 
     backdrop-filter: blur(15px);
 
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.6);
 
-   box-shadow:
-0 8px 20px rgba(0,0,0,0.05);
+    box-shadow:
+    0 8px 25px rgba(91,45,130,0.08);
 
     color: #43245f;
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-4px);
+
+    box-shadow:
+    0 12px 30px rgba(91,45,130,0.15);
 }
 
 .card h3{
@@ -402,7 +411,7 @@ nav a:hover{
 }
 
 .appointments h2{
-    color: white;
+    color: #43245f;
 
     margin-bottom: 20px;
 
@@ -416,17 +425,26 @@ nav a:hover{
 
     border-radius: 20px;
 
-    background: rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.65);
 
     backdrop-filter: blur(10px);
 
-    color: white;
+    color: #43245f;
 
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.5);
 
-    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    box-shadow:
+    0 8px 20px rgba(91,45,130,0.08);
+
+    transition: 0.3s;
 }
 
+.appointment-card:hover{
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 12px 25px rgba(91,45,130,0.15);
+}
 /* CALENDARIO */
 
 .calendar-container{
@@ -436,7 +454,7 @@ nav a:hover{
 
     border-radius: 30px;
 
-    background: rgba(255,255,255,0.45);
+    background: rgba(255,255,255,0.62);
 
     backdrop-filter: blur(15px);
 
@@ -456,7 +474,7 @@ nav a:hover{
 
     margin-bottom: 30px;
 
-    color: white;
+    color: #43245f;
 }
 
 .calendar-buttons button{
@@ -470,9 +488,9 @@ nav a:hover{
 
     cursor: pointer;
 
-    background: rgba(255,255,255,0.3);
+    background: rgba(143,107,255,0.15);
 
-    color: white;
+   color: #5b2d82;
 
     backdrop-filter: blur(10px);
 
@@ -496,7 +514,7 @@ nav a:hover{
 .day{
     text-align: center;
 
-    color: white;
+    color: #6a4c93;
 
     font-weight: bold;
 }
@@ -508,7 +526,7 @@ nav a:hover{
 
     border-radius: 20px;
 
-    background: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.82);
 
     color: #43245f;
 
@@ -547,4 +565,285 @@ nav a:hover{
     font-size: 0.8rem;
 
     margin-top: 10px;
+}
+
+/* EMPLOYEES */
+
+.employees-grid{
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+}
+
+.employee-card{
+    flex: 1;
+
+    min-width: 260px;
+
+    padding: 30px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.72);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.6);
+
+    box-shadow:
+    0 8px 25px rgba(91,45,130,0.08);
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.employee-card:hover{
+    transform: translateY(-5px);
+
+    box-shadow:
+    0 12px 30px rgba(91,45,130,0.15);
+}
+
+.employee-avatar{
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+
+    font-weight: bold;
+
+    color: white;
+
+    background:
+    linear-gradient(
+        135deg,
+        #8f6bff,
+        #7b2d5f
+    );
+
+    box-shadow:
+    0 8px 20px rgba(123,45,95,0.2);
+}
+
+.employee-card h2{
+    color: #43245f;
+
+    margin-bottom: 10px;
+}
+
+.role{
+    color: #7b2d5f;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.employee-info{
+    color: #5e4a78;
+
+    line-height: 1.8;
+}
+
+/* SERVICES PAGE */
+
+.services-page-grid{
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.service-page-card{
+    width: 320px;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    background: rgba(255,255,255,0.72);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    box-shadow:
+    0 8px 25px rgba(91,45,130,0.08);
+
+    transition: 0.3s;
+}
+
+.service-page-card:hover{
+    transform: translateY(-5px);
+
+    box-shadow:
+    0 15px 30px rgba(91,45,130,0.15);
+}
+
+.service-banner{
+    height: 120px;
+}
+
+/* BANNERS */
+
+.pink{
+    background:
+    linear-gradient(
+        135deg,
+        #ffb3d9,
+        #ff77c8
+    );
+}
+
+.purple{
+    background:
+    linear-gradient(
+        135deg,
+        #c8b6ff,
+        #8f6bff
+    );
+}
+
+.dark{
+    background:
+    linear-gradient(
+        135deg,
+        #7b2d5f,
+        #43245f
+    );
+}
+
+.blue{
+    background:
+    linear-gradient(
+        135deg,
+        #b6d0ff,
+        #8fa8ff
+    );
+}
+
+.service-content{
+    padding: 25px;
+}
+
+.service-content h2{
+    color: #43245f;
+
+    margin-bottom: 12px;
+}
+
+.service-content p{
+    color: #5e4a78;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.service-meta{
+    display: flex;
+
+    justify-content: space-between;
+
+    font-weight: 600;
+
+    color: #7b2d5f;
+}
+
+/* CLIENTS */
+
+.clients-table-container{
+    margin-top: 40px;
+
+    padding: 30px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.72);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    box-shadow:
+    0 8px 25px rgba(91,45,130,0.08);
+
+    overflow-x: auto;
+}
+
+.clients-table{
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.clients-table th{
+    text-align: left;
+
+    padding: 18px;
+
+    color: #43245f;
+
+    font-size: 1rem;
+
+    border-bottom: 2px solid rgba(143,107,255,0.15);
+}
+
+.clients-table td{
+    padding: 18px;
+
+    color: #5e4a78;
+
+    border-bottom: 1px solid rgba(143,107,255,0.08);
+}
+
+.clients-table tr:hover{
+    background: rgba(143,107,255,0.05);
+}
+
+/* STATUS */
+
+.status{
+    padding: 8px 14px;
+
+    border-radius: 12px;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+}
+
+.active{
+    background: rgba(123,45,95,0.12);
+
+    color: #7b2d5f;
+}
+
+.medium{
+    background: rgba(143,107,255,0.12);
+
+    color: #8f6bff;
+}
+
+.low{
+    background: rgba(255,182,193,0.2);
+
+    color: #c45b7b;
 }

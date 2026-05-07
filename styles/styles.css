@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+    min-height: 100vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ff77c8,
+        #7df9ff,
+        #b388ff
+    );
+
+    background-size: 400% 400%;
+
+    animation: gradientMove 10s ease infinite;
+
+    overflow-x: hidden;
+}
+
+/* ANIMACIÓN DEL FONDO */
+
+@keyframes gradientMove{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/* NAVBAR */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+header h1{
+    color: white;
+    font-size: 2rem;
+
+    text-shadow: 0 0 10px white;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #ff77c8;
+
+    text-shadow: 0 0 10px white;
+}
+
+/* HERO */
+
+.hero{
+    height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.hero h2{
+    font-size: 3rem;
+
+    color: white;
+
+    text-shadow:
+    0 0 10px white,
+    0 0 20px #ff77c8;
+}
+
+.hero p{
+    margin-top: 20px;
+
+    font-size: 1.2rem;
+
+    color: white;
+
+    max-width: 700px;
+}
+
+/* BOTONES */
+
+.btn{
+    margin-top: 25px;
+
+    padding: 15px 35px;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: 600;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #ffffff55,
+        #ff77c8
+    );
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+    0 0 15px #ff77c8,
+    inset 0 0 10px rgba(255,255,255,0.5);
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+
+    box-shadow:
+    0 0 25px white,
+    0 0 40px #ff77c8;
+}
+
+/* LOGIN */
+
+.login-container{
+    width: 380px;
+
+    margin: 80px auto;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.4);
+
+    box-shadow:
+    0 0 25px rgba(255,255,255,0.3),
+    0 0 40px rgba(255,119,200,0.4);
+
+    text-align: center;
+}
+
+.login-container h2{
+    color: white;
+
+    margin-bottom: 25px;
+
+    font-size: 2rem;
+
+    text-shadow: 0 0 10px white;
+}
+
+.login-container input{
+    width: 100%;
+
+    padding: 15px;
+
+    margin: 12px 0;
+
+    border: none;
+
+    border-radius: 15px;
+
+    outline: none;
+
+    background: rgba(255,255,255,0.7);
+
+    font-size: 1rem;
+}
+
+.login-container p{
+    color: white;
+
+    margin-top: 20px;
+}
+
+.login-container a{
+    color: white;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.login-container a:hover{
+    text-shadow: 0 0 10px white;
+}
+
+/* BURBUJAS */
+
+.bubble{
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.2);
+
+    backdrop-filter: blur(5px);
+
+    animation: float 8s infinite ease-in-out;
+}
+
+.bubble1{
+    width: 200px;
+    height: 200px;
+
+    top: 10%;
+    left: 5%;
+}
+
+.bubble2{
+    width: 150px;
+    height: 150px;
+
+    bottom: 10%;
+    right: 10%;
+}
+
+.bubble3{
+    width: 100px;
+    height: 100px;
+
+    top: 50%;
+    right: 30%;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
